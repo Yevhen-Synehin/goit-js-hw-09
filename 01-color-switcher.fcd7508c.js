@@ -1,0 +1,2 @@
+var bodyRef=document.querySelector("body"),startBtn=document.querySelector("[data-start]"),stopBtn=document.querySelector("[data-stop]"),timerId=null;function getRandomHexColor(){return"#".concat(Math.floor(16777215*Math.random()).toString(16))}startBtn.addEventListener("click",(function(){timerId=setInterval((function(){bodyRef.style.backgroundColor=getRandomHexColor()}),1e3),startBtn.disabled=!0})),stopBtn.addEventListener("click",(function(){clearInterval(timerId),startBtn.disabled=!1}));
+//# sourceMappingURL=01-color-switcher.fcd7508c.js.map
