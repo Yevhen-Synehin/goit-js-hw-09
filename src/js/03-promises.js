@@ -23,7 +23,7 @@ function onFormSubmit(e) {
 
 function definePromice({ delay, step, amount }) {
   let currentDelay = delay;
-  for (i = 1; i <= amount; i++) {
+  for (let i = 1; i <= amount; i++) {
     createPromise(i, currentDelay)
       .then(({ position, delay }) => {
         Notify.success(`✅ Fulfilled promise ${position} in ${delay}ms`);
